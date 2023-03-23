@@ -18,4 +18,4 @@ Sure, here's a polished version of your paragraph:
 
 To better understand how fraudulent transactions are detected by this model and the criteria used to approve or block transactions, it would be helpful to have more details on its workings with the other models in TSYS. Additionally, to evaluate the model's performance, it would be useful to have metrics such as GINI coefficient test, KS-statistic, and false positive rate from previous validation reports."
 
-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
+sk-cM5tsz71x35Thi89zgQoT3BlbkFJbVf9yLi7pJDJUp24kn
