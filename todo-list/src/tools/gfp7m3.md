@@ -19,4 +19,4 @@ Sure, here's a polished version of your paragraph:
 To better understand how fraudulent transactions are detected by this model and the criteria used to approve or block transactions, it would be helpful to have more details on its workings with the other models in TSYS. Additionally, to evaluate the model's performance, it would be useful to have metrics such as GINI coefficient test, KS-statistic, and false positive rate from previous validation reports."
 sk-cM5tsz71x35Thi89zgQo
 
-Good morning, it's Xiang. Unfortunately, I received some bad news from my lawyer that I was not selected in this year's H1B lottery, and my work permit is set to expire this May. I've heard that you are an expert in this matter and I was wondering if you could provide me with some advice?
+
