@@ -15,3 +15,7 @@ Here is a polished version of your sentence:
 Sure, here's a polished version of your paragraph:
 
 It would be my pleasure to assist you, and I will review your submission promptly. Please feel free to contact me if you have any questions for MRMP. Additionally, I have gained valuable knowledge by addressing your inquiries.
+
+The KMPI assessment results have been reviewed, and any RED statuses were explained as not having an impact on the model risk. Additionally, MRMC has reviewed and approved the MPMC [ES-1] updates, which have resulted in several changes to KMPI and the associated criteria. Going forward, the updated KMPI will be monitored using the global KMPI solution tool, and its outcomes will be reviewed during the next round of confirmation.
+
+During this confirmation process, the Model Owner has provided sufficient justification indicating that there have been no changes to the model environment since the last validation. In addition to this confirmation, MRMC recommends that a periodic AML typology analysis should be conducted.
