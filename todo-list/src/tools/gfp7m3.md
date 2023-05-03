@@ -1,2 +1,3 @@
 > can you polish the following sentence?
 
+Regarding the recent NMMC for models 7904 and 104882, Mo updated the feeder model list by decommissioning one shock generator model and adding four new ones. However, the latest model document did not address whether replacing the feeder models would affect model performance or provide recalibration tests. Furthermore, in the model selection process (e.g., 5.1.8.5 Selection Criteria Based on CV Score and Loss Forecast Thresholds in the 7904 model document), several tests are based on the shock generator as of 2021 Q4. Mo did not conduct such tests on the updated shock generators or provide a rationale for not redoing them. Therefore, we would like to hear your opinion on this matter. Thank you.
