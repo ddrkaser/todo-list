@@ -1,8 +1,13 @@
-I want you to act as an English improver. I will speak to you and you will answer in the improved version of my text.
+MRMC has made the following observations based on the extract, which are summarized in Table 9:
 
-The figure identifies 12 pairs of rules with an overlap exceeding 70%. Such a high overlap suggests potential redundancy between these rules. Among these 12 pairs, one noteworthy case is AML-CTSD-MSG-BEN-P-D01-CTY (Daily Messages From High-Risk Countries), which exhibits substantial overlap with multiple rules, including AML-HBC-IFT-INN-A-M01-HBN (Incoming High-Risk Fund Transfers Volume Historical Profile Deviation). This observation raises the possibility that the logic of these rules may contain redundancy, and the thresholds may require fine-tuning to effectively distinguish between transactional patterns monitored by these designated rules.
+MRMC has found that out of the five controls, two controls generated a 0% inquiry ratio within the reviewed time window.
 
-Furthermore, an additional analysis by MRMC has revealed that 3 pairs of rules exhibit significant overlap. These rules are AML-EBO-IFT-ALL-A-D05-EOP (Burst in Originator Activity - Short Period), AML-EFT-IFT-INN-A-S01-EST (Excessive Incoming High-Risk Fund Transfers), and AML-EFT-IFT-OUT-A-501 EST (Excessive Outgoing High-Risk Fund Transfers). MRMC's in-depth analysis indicates that these rules belong to similar typologies. The high correlation between these rule pairs can be attributed to their shared focus on monitoring transactional patterns, either from the beneficiary or the originator activity perspective. Specifically, they cover Burst in beneficiary activity, Excessive fund transfers typology, Burst in Originator activity, Burst in beneficiary activity, and Historical Behavior Comparison. This suggests potential opportunities for optimizing and streamlining these rules for more effective monitoring.
+MRMC has concluded that the parameters for both Frequent Trading Reports and Moving The Grid controls are not adequately tuned. They request additional tuning and/or testing from MO to demonstrate the appropriateness and stability of these parameters.
 
+In conclusion, the model owner did not conduct a sufficiently rigorous evaluation of control parameters to ensure they have been properly tuned to 's specific risk profile and appetite. Specifically, the parameters for Frequent Trading Reports and Moving The Grid, where tuning is possible, should be thoroughly tested and justified. Otherwise, adjustments should be made to ensure the model functions as intended.
+
+The model owner has confirmed that MO conducted BTL testing only for the Frequent Trading control in June 2022 (NMMC-253016). There have been no additional BTL tests conducted, and there are currently no plans for BTL testing for other controls [01].
+
+As a result, MRMC has raised issue 4, highlighting that further investigation is needed regarding the robustness of calibration, particularly concerning the Frequent Trading Reports and Moving The Grid controls.
 
 
