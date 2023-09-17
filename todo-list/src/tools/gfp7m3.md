@@ -1,4 +1,3 @@
+MRMC acknowledges that the controls implemented in the model align fully with GMMCS requirements. However, MRMC has identified a discrepancy within the model documentation. Specifically, there is a disparity between Table 4: "Regulatory Context Specific to Each Alert Logic Modelled" and Table 13. In Table 4, the reference is made to the FINRA 2018 regulatory exam priorities letter for the model's regulatory context, whereas in Table 13, specific rules are mentioned as regulatory requirements.
 
-The implementation of AML-C rules is considered conceptually sound and appropriate, as the rule monitoring aligns with transaction risk within correspondent business activities. However, the submitted model documentation lacks detail regarding Back-Testing and Benchmark Testing (BTL) related to the newly introduced Shell company activity monitoring. The robustness of these thresholds requires further evaluation. The model owner has not provided a sufficiently rigorous evaluation of all model settings and thresholds to ensure they are finely tuned to match 's specific risk profile and risk tolerance.
-
-Therefore, MRMC has raised Issue 7, highlighting a gap in the model documentation pertaining to the BTL testing for Shell company scenarios.
+As a result of this inconsistency, MRMC has raised an issue addressing the discrepancy within the model documentation.
