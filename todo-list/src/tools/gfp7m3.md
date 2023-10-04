@@ -1,11 +1,1 @@
-MRMC conducted an analysis of historical productivity for all rules and typologies from April 2022 to March 2023. Tables 33 provided detailed information at both the rule and typology levels, including the total number of alerts, open alerts, non-productive alerts, productive alerts, and the productive ratio. The productive ratio was calculated as the sum of productive and non-productive alerts. The productivity definition is available in analysis 12.
 
-In this analysis, corrective rules were excluded since they do not generate alerts by themselves but impact the alert rule break score of structuring rules. Similarly, entity-focused rules that are non-detection rules were also excluded.
-
-For rule AML-TLP-TRD-ALL-A-S01-SEC, no productive alerts were observed during the review period. This could be attributed to the generation of only 64 alerts, with 8 of them remaining open, suggesting this may be a one-off event.
-
-Rule PRJ-STR-CCE-INN-P-D01-DST did not generate any alerts. MRMC notes that the model owner submitted a NMMC in October 2022 to update the threshold, lowering it from USD 8000 to USD 7000 to capture SAR and similar activity in the future. Additionally, a change from a 14-day recurrence period to 15 days was recommended to align with structuring rules across models (SAM CB and SAM FS). This change impacts the rule PRJ-STR-CCE-INN-P-D01-DST. MRMC recommends further testing on the new thresholds for this rule to ensure its effectiveness and intended functionality.
-
-The analysis revealed that while alerts and productivity rates exhibited some fluctuations, likely related to transactional activity, there was a minor correlation between transactions and alerts. Despite monthly irregularities in the number of alerts, the productivity rate remained stable across all analyzed months at the rule level. Productivity rate was also influenced by transactional seasonality, particularly in December, January, and February. This pattern was consistent with findings observed in the 2022 revalidation, which noted a significant increase in alert productivity at the end of 2021. Additionally, it's worth noting that in March 2023, productivity decreased to zero due to a high number of open alerts.
-
-In conclusion, MRMC finds that the model's performance is sufficient to meet the established risk appetite.
