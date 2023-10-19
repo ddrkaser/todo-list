@@ -1,5 +1,8 @@
-MRMC identified two rules that were not documented in the model documentation:
+As the revalidation process continues, we've observed the occurrence of several alerts being "soft deleted." However, we couldn't locate any documents or records detailing the "soft delete" process. I would like to request the following information:
 
-1. "" generated 78 alerts. The model owner explained that these are manual alerts created manually, and the rule ID "MAS" is used to differentiate manual alerts from automated alerts.
+1. A list of alerts that have been "soft deleted" between April 2022 and March 2023.
+2. Relevant records or communications, including the requesting party, date, and the impact of these deletions.
+3. Procedures and criteria that outline the qualifications for alerts eligible for "soft deletion."
+4. Any controls or safeguards in place for this process, such as the application of the "4-eyes principle."
 
-2. "" produced 9 alerts. According to the model owner, in October 2022, there were upgrades in the test environment, and the "ADR-SLL" rule was mistakenly activated in FS production, resulting in these 9 alerts. Eight of these alerts were standalone "ADR-SLL" alerts and were subsequently "soft deleted." However, one alert is a mixed rule alert involving TSD, ACH, and EFC rules. This incident was escalated to FC for assessment. MRMC confirms that the "ADR-SLL" rule is not currently active in production.
+This information will help us better understand the "soft delete" process and its implications. Thank you for your assistance.
