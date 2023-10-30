@@ -1,7 +1,1 @@
-The calibration of the rule , where tuning is feasible, should undergo comprehensive testing and justification. It's important to note that this issue is considered non-critical due to the presence of several controls aimed at reducing model risk:
-
-1. MRMC has reviewed the expert judgment process of the final decision framework, especially when thresholds are adjusted based on the results of Back-Testing and Benchmark Testing (BTL testing) [053].
-
-2. The model tuning decision process involves a logical approach to apply the conclusions of the qualitative process [054].
-
-Additional details on these controls can be found in Analysis 23. These measures contribute to mitigating model risk and provide a framework for addressing calibration and tuning issues in a systematic manner.
+As the revalidation deadline is approaching, I would like to inquire about the status of the soft deletion question, BTL sample submission, and GitLab Q&A questions. Could you kindly provide your responses to each of these queries, and also inform us if there might be any potential postponement? I greatly appreciate your time and assistance.
