@@ -5,4 +5,4 @@ Here are the outlined tasks:
 1. Review the page that provides background information and guidance on creating RPs within MRMP.
 2. Develop your CCs in a separate document, referencing the previous RP available on the MRMP submission & approval tab, as illustrated in the screenshot below.
 
-Please inform me if further information is needed. Your time and assistance are greatly appreciated.
+Correct, soft deletion occurs when incorrect or false positive alerts are generated due to various factors such as system errors, implementation issues, or other anomalies. Monitoring the volume or occurrence of soft deleted alerts provides valuable insights from an implementation perspective. It helps in identifying and understanding instances where alerts were incorrectly generated and subsequently removed, aiding in the assessment of system performance, implementation accuracy, and the overall effectiveness of the alert generation process. Tracking and analyzing these soft deleted alerts contribute to improving the system's accuracy and reducing false positives in the alerting mechanism.
