@@ -1,12 +1,7 @@
-In the 2023 revalidation cycle, the MO hasn't completed the FCP qualitative review and approvals by the end of the revalidation process. There are several key missing components:
+Regarding issue description points 1, 2, and 6, MRMC has reviewed the Parameter Analysis document in [MM-5] RuleSheets [027] and the Optimization Tuning Methodology document ES-7 Optimization Methodology [4]. This review includes examples of how the results from each statistical test are utilized to determine the statistical soundness for BTL tunability. Therefore, these bullet points have been completely addressed.
 
-1. Final results from the FCP qualitative review are absent.
-2. Additional hypothesis testing results indicate that two rules failed the initial hypothesis test.
-3. The final conclusion from the MO regarding the model's performance within the desired risk appetite is still pending.
+For issue description point 2, the MO has provided additional justification. The statistics generated for parameters at a population group level for the specific time period (April 2022 to March 2023 for the latest BTL execution) clarify that a missing value (NaN) indicates no relevant transaction activity for that rule within the considered population group and time frame. MRMC considers this missing value issue to be completely addressed.
 
-Regarding the BTL threshold drop strategy, there are a couple of concerns:
+Moreover, concerning issue description point 6, the MO has given additional details on utilizing maximum values for population groups. The parameter value distribution is derived from every transaction of the relevant transaction type for the rule without applying any filtering logic. For determining BTL testing thresholds, the maximum value of the parameter distribution isn't used. Only the median value might be employed where applicable, following the process indicated in Section 5.3.2 of the Optimization Tuning Methodology document ES-7. Thus, this bullet point has been completely addressed.
 
-1. The strategy doesn't guarantee that the BTL test region remains meaningful for all parameter/population segment threshold levels. Some segments in detection rules have thresholds set so high that even lowering them by 15% fails to capture the maximum parameter value.
-2. In security blanket rules, some population segments have thresholds set very close to the median. Lowering them to the median creates an extremely small BTL region.
-
-Furthermore, MRMC has identified weaknesses in performance monitoring oversight and periodic tuning methodology related to the alert suppression of the negative scoring functionality of the learning module. The procedures and processes were inadequate in capturing and providing insights for the affected customer population, such as the duration of suppressed parties and the volume impacted. Additionally, there were no criteria established for testing during model performance monitoring and tuning in this dimension.
+However, issue description points 3, 4, 5, and 7 remain unresolved. The MO hasn't completed the 2023 FCP qualitative review and BTL execution by the end of the revalidation process. MRMC cannot conduct additional analysis based on the current evidence, leaving these bullet points open and unaddressed.
