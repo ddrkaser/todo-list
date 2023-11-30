@@ -1,8 +1,12 @@
-The model owner has chosen a 6-month calibration window (Oct 2022 - Mar 2023) for the current BTL testing. The ongoing frequency of BTL testing is also set to 6 months. The reasons provided by the model owner for this decision are as follows:
+In the 2023 revalidation cycle, the MO hasn't completed the FCP qualitative review and approvals by the end of the revalidation process. There are several key missing components:
 
-1. The 6-month choice is considered conservative when compared to a 3-month window.
-2. There has been an enhancement and alignment of the productivity definition between the production and BTL processes.
-3. MRMC has reviewed the provided documentation and determined that the current BTL testing is based on 6-month data, but the risk appetite is applied to the current BTL test results using SARs filed during the previous calendar year. This mismatch means the application of the FR isn't aligned with the BTL test period. Moreover, the use of SAR review results considers how far the SARs were detected below the production thresholds, while the sampling process occurs at the population group level. These processes are not in alignment, potentially causing the samples to bias towards dropped thresholds rather than just below the production thresholds. Consequently, there's a need to enhance the assessment of the BTL test to ensure model performance stability within the risk appetite.
-4. MRMC has reviewed the justification and rationale for selecting tunable parameters within the Parameter Analysis sheet under the 'Conceptual & Statistical Soundness' tab. They find the rationale for tunable parameter selection well-documented, and the justifications provided are sufficient.
-5. Alert productivity underwent review per analysis 12 and was found to be adequate. However, analysis of the BTL results in table 41 indicates that some rules exhibit zero productivity, even though ATL productivity is higher than zero and the reviewed sample size is substantial. MRMC concludes that a bias might exist in the qualitative review process of the production and BTL testing. To test for the presence of bias, the model owner should blend ATL alerts and BTL alerts and initiate investigations rather than filtering out the ATL alerts.
-6. Additionally, there's a requirement for additional evidence and justification concerning the threshold decision process. For instance, details are needed regarding how the thresholds were decided for Security Blanket Rules, including each Threshold Parameter, Transaction Type, or Event name.
+1. Final results from the FCP qualitative review are absent.
+2. Additional hypothesis testing results indicate that two rules failed the initial hypothesis test.
+3. The final conclusion from the MO regarding the model's performance within the desired risk appetite is still pending.
+
+Regarding the BTL threshold drop strategy, there are a couple of concerns:
+
+1. The strategy doesn't guarantee that the BTL test region remains meaningful for all parameter/population segment threshold levels. Some segments in detection rules have thresholds set so high that even lowering them by 15% fails to capture the maximum parameter value.
+2. In security blanket rules, some population segments have thresholds set very close to the median. Lowering them to the median creates an extremely small BTL region.
+
+Furthermore, MRMC has identified weaknesses in performance monitoring oversight and periodic tuning methodology related to the alert suppression of the negative scoring functionality of the learning module. The procedures and processes were inadequate in capturing and providing insights for the affected customer population, such as the duration of suppressed parties and the volume impacted. Additionally, there were no criteria established for testing during model performance monitoring and tuning in this dimension.
