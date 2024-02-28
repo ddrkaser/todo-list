@@ -1,16 +1,9 @@
-UBSVisaCenter@ogletreedeakins.com
-	Nana.Boakye@ogletreedeakins.com;UBSVisaCenter@ogletreedeakins.com; brittany.gentle@ogletreedeakins.com
-
- Dear Officer,
-
-I am writing to request an update to my work email address within the UBS system. My current file number is 076715.001748 and the corresponding case number is KBAAK521550-7.
-
-Could you please modify my email address to xiang.li@ubs.com? Additionally, I kindly request that you resend any questionnaires associated with my case to this updated email address. Unfortunately, I no longer have access to my previous email inbox, and not able to complete the required questionnaires. Receiving them at xiang.li@ubs.com would enable me to complete this task promptly.
-
-I sincerely appreciate your time and assistance in this matter.
+s logic chain can be refined as follows:
 
 
-Thanks,
-Xiang LI
 
-	Request to update email address and re-send questionnaires
+Regarding MRMC's identified issues:
+
+1. Justifying how similar small to large loss ratios confirm methodology comparability requires referencing literature or providing a rationale to support this assertion.
+2. The rationale behind defining small losses as losses <= $25m for  warrants scrutiny, particularly in light of the observation that large operational loss events, as outlined on page 23 of the  model doc, are often idiosyncratic. For  2024, an event review focused on those exceeding a loss threshold of $50 million USD, as indicated on page 44's sensitivity analysis. These events, or groups thereof, are regarded as idiosyncratic.
+3. Furthermore, given that the total projected operational losses of  are approximately three times greater than those of CS, the appropriateness of the $25 million break-up line for categorizing large/small losses for UBS is questionable given the different scales between UBS and CS .
