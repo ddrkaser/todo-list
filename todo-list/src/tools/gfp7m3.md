@@ -1,10 +1,16 @@
-Review of MRMC:
+UBSVisaCenter@ogletreedeakins.com
+	Nana.Boakye@ogletreedeakins.com;UBSVisaCenter@ogletreedeakins.com; brittany.gentle@ogletreedeakins.com
 
-The Model Owner has incorporated Section 6.5 #4, introducing the monthly dashboard for alerts and the "soft deletion" process.
-On a monthly basis, the Model Owner conducts a comprehensive check using a dashboard, offering insights into issues such as alert generation anomalies due to data load errors, incorrect classification of country codes, or delays in receiving counterparty information. In the event of such situations, the Model Owner initiates the "soft-deletion of alerts" process.
-If any discrepancies are pinpointed by M&M, FCP-IT/FCP will be notified to identify the root cause. Incorrect or false-positive alerts will be segregated and subject to soft-deletion pending FCP's approval. These soft-deleted alerts will remain invisible in the front end.
+ Dear Officer,
 
-Conclusion of MRMC:
+I am writing to request an update to my work email address within the UBS system. My current file number is 076715.001748 and the corresponding case number is KBAAK521550-7.
 
-MRMC has evaluated the updated "soft deletion" process, delineating procedures and criteria specifying the qualifications for alerts eligible for "soft deletion" and the responsible parties in this process. Consequently,
-MRMC considers that this issue can be closed.
+Could you please modify my email address to xiang.li@ubs.com? Additionally, I kindly request that you resend any questionnaires associated with my case to this updated email address. Unfortunately, I no longer have access to my previous email inbox, and not able to complete the required questionnaires. Receiving them at xiang.li@ubs.com would enable me to complete this task promptly.
+
+I sincerely appreciate your time and assistance in this matter.
+
+
+Thanks,
+Xiang LI
+
+	Request to update email address and re-send questionnaires
