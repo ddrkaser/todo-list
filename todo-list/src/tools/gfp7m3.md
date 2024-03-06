@@ -1,3 +1,1 @@
-Based on the EJDA documents and supporting evidence submitted, MRMC concludes that there are no objections to the EJDA related to Methodology and Loss Review. The EJDA owner's intention to provide a rationale for determining the CCAR Operational Risk Combination Adjustments aligns with the thorough assessment conducted, thus warranting a non-objection from MRMC.
 
-The EJDA owner aims to furnish a rationale for determining the CCAR Operational Risk Combination Adjustments. After thorough examination of the EJDA documents and supporting evidence presented, MRMC reaches a non-objection conclusion regarding the EJDA concerning Methodology and Loss Review.
