@@ -1,1 +1,5 @@
-Direct Impact: There are discrepancies or insufficient evidence in the documentation concerning controls. However, there have been no reported operational incidents according to KMPI monitoring. Additionally, although the screenshots of the BCP recovery plan display a green signoff, it remains essential to document warning indicators for any potential future issues to mitigate associated risks with the plan. It's crucial to note that this issue is not anticipated to directly affect the model's output or usage.
+Direct Impact: Following the review of available information, the current gaps identified in the MPMC concept are not anticipated to significantly affect the model outputs or its usage.
+
+Transparency: There is a need to enhance documentation to facilitate third-party understanding of the various components of model risk. Currently, information is dispersed across multiple versions of references, necessitating collation for easier interpretation.
+
+Performance Monitoring: The confirmation results submitted suggest that the model risk has not markedly increased over the last confirmation cycle. However, according to MRMC, this assertion lacks full evidence, and additional clarifications on the confirmation assessments or results are necessary.
