@@ -1,14 +1,25 @@
-MRMC Review:
-Upon reviewing the submitted evidence, MRMC has made the following observations:
+MRMC has identified several issues that need to be addressed:
 
-1. The MPMC has not been changed as it is a global document, and triggers for CUSO AM may not be applicable to other jurisdictions. MRMC agrees with the justification provided and recommends the MO to document the description of the model maintenance process, including regular parameter updates and/or recalibration triggers, pursuant to Model Documentation Standards [P7].
+1. Clarity in Model Outputs: The presentation lacks clear definition of model outputs. For instance, specifying that the model score ranges from 0 to 100, where 100 indicates the highest likelihood of FA success at UBS and 0 indicates the lowest. Additionally, it's suggested to rank FAs based on their model scores and assign star ratings accordingly, from 1 star to 5.
 
-2. MO has identified 3 recalibration triggers in the Model Confirmation [M7]:
-   - KMPI #1 Manual Overrides [M7, Assessment 2. Test a]: MRMC agrees with the inclusion of this KMPI to account for poor model performance.
-   - KMPI #5 Ad hoc feedback [M7, Assessment 2. Test a]: MRMC agrees with the inclusion of this KMPI to account for ad-hoc challenges to risk ratings.
-   - SME output review [M7, Assessment 9]: MRMC recommends that this assessment be conducted with greater granularity than presenting risk ratings by peer group. If that is unfeasible, benchmarking (see analysis 7) should be performed annually with a set of synthetic data identical to the actual current population to ensure that the model performance is aligned with SME judgment. A metric must be defined to assess the outcome of the test.
+2. Justification of KMPI Parts and Lift Rate: 
+    a. Clarify how lift rate serves as an indicator of model performance.
+    b. Explain the calculation method for T12 of the top decile and whether all top FAs are recruited through the model.
+    c. Provide an example illustrating how lift rates can indicate model performance.
 
-However, MRMC found insufficient details regarding the execution and safeguarding of the aforementioned indicators, resulting in a lack of transparency concerning the detailed execution methodology and associated parties involved, as well as the rationale for overrides.
+3. Documentation Gaps in Model Inputs: 
+    a. Clearly outline the feature engineering process for categorical data, as well as handling of scaling, outliers, and missing values.
+    b. Justify the relevance of the external discovery data and explain how it complements the internal FA dataset.
+    c. Establish connections between internal and external data sources, highlighting significant business factors and their impact on model output scores.
 
-MRMC Conclusion:
-MRMC confirms that this issue will remain open until transparency regarding the KMPIs is well-documented. A more granular SME review process or more frequent execution of benchmarking will be ideal.
+4. Documentation Gaps in Model Methodology: 
+    a. Include tests on variable selection, handling of hyperparameters, and methodology choice.
+    b. Explain the process of selecting explanatory variables from a pool of available drivers from publicly available data.
+    c. Describe the out-of-sample testing procedure, including possible comparisons between in-sample and out-of-sample AuC and indications of overfitting.
+
+5. Documentation Gaps in Model Use: 
+    a. Confirm whether the final model output consists solely of star ratings or if there are other outputs presented in the dashboard.
+
+6. Documentation Gaps in Model Implementation: 
+    a. Clarify how the model is examined and by whom.
+    b. Define what constitutes satisfactory results in model testing and implementation.
