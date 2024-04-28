@@ -1,1 +1,1 @@
-
+MO stated that the alert score thresholds, or scoring scale, were expert-driven, indicating that they were intentionally set based on expert judgment rather than descriptive statistic alone. RV acknowledged that for some rules, the misalignment between the scoring scale and rule thresholds was intentional. This was due to percentile values not correlating with the rule's designed coverage, suggesting that the scoring scale was deliberately configured by experts to prioritize the designated rule purpose over certain thresholds.
