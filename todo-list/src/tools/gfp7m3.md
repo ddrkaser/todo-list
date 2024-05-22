@@ -1,5 +1,1 @@
-The MO has misunderstood the root cause of the issue. Our concerns are as follows:
 
-1. The MO attempted to justify the appropriateness of the NMMC solely on the basis that "there was no output impact." However, the MO failed to assess the impact on conceptual soundness. The scoring scale has remained unchanged since the initial validation. If it was not based on descriptive data or expert judgment, what was the rationale behind the initial scoring? Why was it considered acceptable in past years but not now? The MO needs to revisit the initial justification and clarify whether the new scoring scale impacts the model.
-
-2. The purpose of this NMMC was to correct the misalignment between two parameters. However, the MO did not address the aspect of conservatism in the submission documentation. Even if the change was intended to enhance conservatism, no tests were conducted to prove that this change would conceptually increase conservatism (which the MO deemed irrelevant) or quantitatively (where the MO claimed there was no impact on the output).
