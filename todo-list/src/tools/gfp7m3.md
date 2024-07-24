@@ -1,1 +1,1 @@
-
+I ran "FSI_Historical Productivity Script_v0.3.sql" to extract alert information for productivity calculation for each rule. The productivity ratio is calculated as follows. Could you please confirm that the calculation and productivity ratio in the file "MRMC_productivity_nov22_oct23.xlsx" is accurate? If not, please provide us with the SQL scripts and calculations to obtain the accurate productivity ratio between November 2022 and October 2023. Thank you.
