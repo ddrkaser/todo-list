@@ -1,7 +1,11 @@
-For some parameters, the selected thresholds do not appear to be consistent across each population group (i.e., they are positioned at different points within the distribution of each population). The thresholds are also inconsistent across the clusters, which were calculated based on transaction value and volume, and assigned into three clusters (1 to 3). However, there are instances where the threshold for Cluster 2 is higher than for Cluster 3. For example, in the case of rule "PRJ, the thresholds for , , and  are 11,500, 57,500, and 34,500, respectively. This inconsistency, where Cluster 2 has the highest threshold, raises concerns about the logic behind the threshold setting.
+Thank you for your patience. Please refer to the attached file, " for the draft of the issues. Please note that this list may change due to the following reasons:
 
-Additionally, there was no justification provided for the thresholds assigned to missing population groups, where no transactions were captured in the past 12 months. This could suggest that the initial threshold setting may not have been appropriately calibrated. The absence of transactions makes it difficult to validate whether the threshold settings were effective or appropriate for those groups.
+1. The memo response, where new evidence was provided to address operational misalignment.
+2. New evidence submitted on the GitLab Q&A board.
+3. Internal alignment within MRMC across IB and FSI.
+4. GIA feedback provided to MRMC as part of their issue assurance in March 2024 on DE.
+5. Recent feedback from FCP.
+6. Incorporation of language from the FRB MRA to ensure all activities were completed as per the response provided.
+7. If possible, MRMC will provide example cases prior to the release of the validation report. Otherwise, they will be included in the final validation report to support MRMC’s claims.
 
-Furthermore, justification or analysis regarding the default value settings and rule scoring is still missing in the updated model documentation. This lack of documentation on the rationale behind these thresholds and scoring further highlights a gap in the transparency and robustness of the model development process.
-
-In conclusion, a clear justification for the appropriateness of these thresholds should be provided. If there was no initial rationale or historical data, or if productive events were not available for certain population groups, a comprehensive assessment of the conceptual soundness should be conducted. This assessment would ensure that these thresholds are effective and aligned with the model's intended purpose. Such analysis is crucial to maintain the integrity of the model and to mitigate the risks associated with arbitrary or unsupported threshold settings.
+Thank you.
