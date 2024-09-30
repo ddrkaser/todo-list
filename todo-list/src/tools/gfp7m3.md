@@ -34,3 +34,11 @@ In summary, failing to generate a base population and conduct sample reviews in 
 
 
 Non-promoted or below-infraction entities may not trigger alert breaks but can still pose significant risks. Without proper testing of these entities, the model might unknowingly allow "less-apparent" suspicious activities to go undetected. As a result, the SBA rule may fail to identify trends or behaviors that are only visible when analyzing non-promoted or below-infraction entities. This oversight can lead to missed opportunities for strengthening the model, ensuring it is robust enough to detect a broad spectrum of risks. Such gaps could later be exploited by bad actors engaging in borderline suspicious activities, thus undermining the effectiveness of the model in risk mitigation.
+
+Here’s a refined version of your message:
+
+I can only fully grasp the last point—that MRMC is unable to evaluate whether the segmentation is appropriate. The issue arises because there’s no documentation explicitly explaining the AML risk profiles for each population group. While we understand that the population groups differ from each other, we cannot assess whether customers are placed in the correct population group without knowing what each group represents.
+
+For example, if we classify a customer as "elderly" and the customer's age is 20, we would easily recognize that the rating is wrong or that the age data is inaccurate. However, when it comes to population groups like INDIV1HR and INDIV2HR, we don't understand the difference (or at least don’t have clear definitions for them). So, how can we determine if a customer should belong to INDIV1HR or INDIV2HR?
+
+My interpretation may be arbitrary, so we should discuss this with Hardik tomorrow.
