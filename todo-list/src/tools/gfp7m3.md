@@ -1,1 +1,19 @@
 MRMC has reviewed the BTL-24 and identified a discrepancy between the BTL sample review process and the production alert review process. In production, multiple rule breaches are aggregated into a single alert at the party level, which is then reviewed by one individual. However, in the BTL process, samples are taken from the base population and assigned to different reviewers. There have been instances where samples triggered by the same entity within the same month were assigned to five different reviewers. This highlights a divergence between how alerts are handled in testing versus production.
+
+The separation between how alerts are managed in BTL testing and production introduces several risks, which can impact the accuracy, consistency, and overall effectiveness of the alert review process. Here are some key risks:
+
+1. **Inconsistent Alert Handling**: In production, multiple rule breaks for the same entity are aggregated and reviewed by a single person, providing a holistic view of the entity's activities. However, in BTL testing, distributing alerts across different reviewers may lead to fragmented analysis. This can cause reviewers to miss patterns or connections that would have been apparent in an aggregated review, potentially overlooking risks that could be significant if considered together.
+
+2. **Biased or Skewed Testing Outcomes**: The separation may lead to different interpretations of the same entity’s behavior, depending on the reviewer’s experience or focus. As different reviewers handle different portions of the same entity’s alerts in BTL testing, the overall risk assessment may be inconsistent. This can result in an inaccurate representation of alert effectiveness and skew the results of the BTL testing.
+
+3. **Reduced Comparability Between Testing and Production**: One of the primary purposes of BTL testing is to validate the effectiveness of the alert system under conditions that mirror production. If the alert handling process differs significantly between the two, the results of BTL testing may not accurately reflect the behavior or performance of the system in production, undermining the validity of the tests.
+
+4. **Risk of Missed Escalation**: In production, a single reviewer has the full context of multiple rule breaks and can escalate the alert more effectively. In BTL, if the alerts are fragmented, there is a risk that the importance of certain rule breaks may be diminished or not recognized, leading to failure in escalating a potentially high-risk situation.
+
+5. **Inefficiencies in Reviewer Allocation**: Assigning different reviewers to handle the same entity’s alerts in testing can lead to inefficiencies. Reviewers may duplicate efforts, as each might need to gather the same contextual information about the entity. This inefficiency could reduce the overall effectiveness of the review process and increase the time and resources needed for proper validation.
+
+6. **False Sense of Assurance**: If BTL results do not properly reflect the production environment, decision-makers may be provided with a false sense of assurance regarding the effectiveness of the alert management process. This could lead to a failure in addressing underlying issues in the production environment, potentially leaving gaps in risk detection.
+
+7. **Divergence in Performance Metrics**: If the processes differ between BTL testing and production, performance metrics such as the number of alerts reviewed, escalated, or closed might also diverge, making it difficult to benchmark performance and identify areas for improvement accurately.
+
+Addressing these risks would require aligning the alert review processes in BTL testing and production to ensure that testing outcomes are reliable, comparable, and reflective of real-world scenarios.
