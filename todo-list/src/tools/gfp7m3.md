@@ -9,3 +9,8 @@ MRMC has identified the following specific risks arising from the current model 
 1. **BTL Sample Size Risk**: The model’s BTL sample sizes are insufficient to accurately assess its calibration. MRMC observes that key parameters used to calculate BTL sample sizes—expected BTL productivity, risk appetite, and margin of error (see —are overestimated due to the inclusion of adverse media and non-rule-relevant alerts in the productivity definition.
 
 2. **ATL Performance Metric Risk**: The model's ATL performance metric is overestimated and not accurate. The inclusion of non-relevant alerts in the productivity definition distorts the true measure of the model’s performance. This misalignment violates of the Governance of Models policy, posing a risk of stakeholders making decisions based on incorrect performance metrics.
+
+
+MRMC has noted that, according to [ES-6] Productivity Definition, SARs filed due to negative news/adverse media should not be considered productive. However, these SARs are still included under Status ID: . 
+
+Additionally, MRMC observes that in MRMP, KMPI 5.1 and 5.2, both model productivity and rule productivity are calculated based on the definition outlined in the Model documentation, which includes SARs filed due to adverse media. MRMC identifies a risk that this approach inflates the model's production performance metric, leading to an overestimation of the true production performance of the model.
