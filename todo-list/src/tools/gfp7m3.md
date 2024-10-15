@@ -1,1 +1,1 @@
-This request pertains to 12915. The KMPI values and RAG status are correctly loaded in the KMPI dashboard, but they are missing from the KMPI flowable (refer to the attachments "KMPI_dashboard.png" and "KMPI_flowable.png"). Specifically, in the KMPI dashboard, KMPI 0.2 results are available for every month up to May 2024. However, in the KMPI flowable, KMPI 0.2 results are only populated for December 2023, while the subsequent months remain empty. Could you please investigate why the KMPI results are not being correctly loaded into the flowable?
+
