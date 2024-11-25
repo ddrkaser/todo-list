@@ -1,13 +1,23 @@
-**Issue:**  
-For some parameters, the selected thresholds are not consistent across population groups, as they vary in positioning within the distributions of each group. Additionally, the thresholds lack consistency across clusters, which are categorized based on transaction value and volume into three clusters (1, 2, and 3). Notably, there are instances where the threshold for Cluster 2 is higher than for Cluster 3. For example, in rule "PRJ-TSD-EFT-ALL-A-S01-CTY," the thresholds for INDSOF1LR, INDSOF2LR, and INDSOF3LR are set at 11,500, 57,500, and 34,500, respectively. This inconsistency, where Cluster 2 has the highest threshold, raises concerns about the logic and rationale behind the threshold setting.
+Here is an improved version of your text for better clarity and readability:
 
-**Proposed Resolution:**  
-The MRMC team has reviewed Sections 5.6.1, 5.6.2, and 5.6.3 of the updated model documentation ([M4]). The Model Owner (MO) conducted a clustering assessment using transaction data spanning November 2022 to October 2023, with the test results documented in [MI-23] STDEV_STATS [0105].  
+---
 
-The analysis revealed no clear hierarchy among Clusters 1, 2, and 3, as the clusters are driven by both transaction value and volume. Further assessment showed that institutional clients (INSCRNC), IRA accounts, and trust accounts (TRSTIRV) exhibit transaction behaviors distinct from individual client segments. When these behaviors were compared against the current clustering parameter values, the alignment across all segments was confirmed.  
+**Subject:** Clarification on Issue 258189: Insufficient Justification for the Choice of Risk Tolerance  
 
-Additionally, the findings in [MI-22] ACCOUNT_POP_GRP [061] demonstrated the stability of cluster assignments and a minimal impact of any cluster re-assignments. Therefore, no material risk to the model arises from the current population group assignment approach or the existing thresholds.  
+I would like to provide some clarification regarding Issue 258189: *Insufficient Justification for the Choice of Risk Tolerance*.
 
-Upon reviewing Table 57, MRMC confirmed that the cluster parameters also lack a clear hierarchy between Clusters 1, 2, and 3, which explains the inconsistencies originally flagged in the issue. It is important to note that these cluster parameters were last updated in 2021. MO has proposed an annual recalibration process for the clustering parameters. This process involves recalculating the values, comparing them to the previous year's parameters, and evaluating their overall impact on the model output.  
+1. **Definition of False Negative Rate (FNR):**  
+   The formula FNR = FN / (FN + TP) is the correct definition of the false negative rate. I agree that using this calculation does not make sense in the current context. However, in BM5 Appendix E, the 10% is inaccurately referred to as the FNR. If you agree with the proper definition of FNR, could you update the document to rephrase the 10% as your "risk tolerance rate" instead of FNR?
 
-Given the alignment of segments with their corresponding clusters, the stability of the clustering approach, and the proposed annual recalibration process, the issue can now be considered resolved.
+2. **Purpose of the 10% Tolerance Rate:**  
+   Our 10% risk tolerance is not used for sample size calculation. The OCC Handbook uses the tolerance rate specifically for statistical sampling exercises (e.g., sample size calculation), which is a different context altogether.
+
+3. **Risk Tolerance and the BTL Process:**  
+   Although the risk tolerance is not directly applied during the BTL process, the number of productive alerts generated as a result of the BTL is compared against the risk tolerance. Assuming the sampling is done correctly, the number of productive alerts can be calculated as:  
+   **Number of Sample Productive Alerts = Sample Size × Sample Productive Rate**  
+
+   If the sample size is larger, as seen in the 2023 BTL, we are more likely to breach the risk tolerance. Please refer to the attached file for a detailed comparison.  
+
+---
+
+Let me know if further adjustments are needed!
