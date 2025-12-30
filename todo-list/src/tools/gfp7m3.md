@@ -1,83 +1,75 @@
-Below is a refined, validation-ready version of your content, rewritten for clarity, precision, and alignment with MRMC / SR 11-7 documentation standards. The substance is unchanged; the focus is on structure, control language, and audit defensibility.
+Below is a **refined, validation-ready rewrite** of your content, structured and phrased to meet MRMC documentation standards. The technical substance is preserved; the language is tightened for clarity, traceability, and audit defensibility.
 
 ---
 
 ## Validation Objective
 
-The objective of this validation is to assess the alignment between **Monitoring Intent**, **Risk Coverage**, and **Global Minimum Standards** following the proposed change in rule criticality—specifically, the impact of reclassifying the QR rules from **primary** to **secondary** monitoring controls. The validation aims to determine whether the revised QR framework continues to provide sufficient coverage of relevant regulatory red flags and typologies, consistent with internal Alert Generation Standards (AGS) and regulatory expectations.
+The objective of this validation is to ensure that **all in-scope transactions are comprehensively and accurately mapped** to the group transaction codes monitored by the QR rules. Specifically, MRMC assessed the **completeness and appropriateness of transaction type–to–group code mappings**, evaluated alignment with rule design intent, and determined whether any changes introduce gaps in monitoring coverage.
 
 ---
 
-## Validation Scope and Approach
+## Validation Analysis
 
-MRMC reviewed the **Alert Generation Standards for Automated Transaction Monitoring** documentation and the associated typology standards to evaluate whether the newly proposed QR rules provide adequate coverage of applicable regulatory red flags. The assessment included:
+MRMC developed a **comparative transaction mapping matrix** across legacy and redesigned QR rules using *New_Query_Rule_Mapping* and *QUERY_RULE_MAPPING_VI*. This analysis compared individual transaction types against their corresponding group codes to assess consistency, coverage, and alignment with monitoring intent.
 
-* Review of the **rule-to-typology mapping** provided by the Model Owner
-* Review of the **coverage analysis** mapping regulatory red flags to rule typologies, as documented in *Red Flag Coverage Analysis (2024 v1.1)*
-* Evaluation of conceptual alignment between monitoring intent and implemented rule logic, with a focus on **Change in Behavior** detection
+As illustrated in *Table: QR Comparison*, MRMC identified several transaction types and transaction groups that are either **no longer directly monitored** or **not mapped to the new QR rules**. These changes were driven by a combination of:
 
----
+* Financial Crime Program (FCP) interpretations of Alert Generation Standards
+* Identified data quality limitations
+* First Line of Defense (1LoD) changes to anticipated activity questions and value/volume ranges collected during onboarding
 
-## Typology Coverage Assessment
-
-The QR rules are designed to address the **Change in Behavior** typology (AGS 4.1), which seeks to identify discrepancies between **expected activity** (as disclosed during onboarding/KYC) and **actual transactional behavior** observed post-account opening.
-
-### Legacy QR Rules (4 Rules)
-
-The legacy QR framework consists of four rules that generate alerts when a new account (aged less than 365 days) exhibits transactional behavior that materially deviates from expected activity disclosed during onboarding. Specifically, alerts are generated when observed value or volume exceeds **1.25% of the aggregated expected value or volume across all disclosed transaction types**.
-
-The four legacy rules are:
-
-* **AML_QR_ACC_PTY_MON_4_1 (All Credit Value)**
-  Detects deviation from expected KYC credit value at the account level.
-
-* **AML_QR_ACC_PTY_MON_4_2 (All Credit Volume)**
-  Detects deviation from expected KYC credit volume at the account level.
-
-* **AML_QR_ACC_PTY_MON_4_3 (All Debit Value)**
-  Detects deviation from expected KYC debit value at the account level.
-
-* **AML_QR_ACC_PTY_MON_4_4 (All Debit Volume)**
-  Detects deviation from expected KYC debit volume at the account level.
-
-These rules apply aggregation across all transaction types and do not distinguish between different transactional behaviors or payment categories.
+Additional clarification on these changes was obtained through documented discussions in *SAM FS – CDD*.
 
 ---
 
-## New QR Rule Framework (20 Rules)
+## Removed or Unmapped Transaction Types
 
-The proposed QR framework replaces the four aggregated rules with **20 more granular rules**, segmenting monitoring by **transaction type groups** while retaining the same underlying monitoring intent of identifying deviations from expected KYC behavior.
-
-The new rule set is structured as follows:
-
-### Credit-Side Monitoring
-
-* **Credit Value by Transaction Type (AML_OR_ACC_PTY_MON_4_1 – 4_5)**
-  Detects deviation from expected KYC credit value by grouped transaction types at the account level.
-
-* **Credit Volume by Transaction Type (AML_OR_ACC_PTY_MON_4_6 – 4_10)**
-  Detects deviation from expected KYC credit volume by grouped transaction types at the account level.
-
-### Debit-Side Monitoring
-
-* **Debit Value by Transaction Type (AML_OR_ACC_PTY_MON_4_11 – 4_15)**
-  Detects deviation from expected KYC debit value by grouped transaction types at the account level.
-
-* **Debit Volume by Transaction Type (AML_OR_ACC_PTY_MON_4_16 – 4_20)**
-  Detects deviation from expected KYC debit volume by grouped transaction types at the account level.
+**CRD_CE (Quasi Cash Card Purchase – ATM or ATM-like Activity)**
+This transaction type was removed from legacy rules AML_QR_ACC_PTY_MON_4_1 and AML_QR_ACC_PTY_MON_4_2 in July 2024. GitLab evidence confirms that CRD_CE represents **ATM or ATM-like cash withdrawals**, which are debit activities. As the referenced QR rules are designed to monitor **credit-side activity**, inclusion of this debit transaction was conceptually inconsistent. Its removal aligns rule logic with monitoring intent.
 
 ---
 
-## Preliminary Validation Observations (Context for Downstream Sections)
-
-At a conceptual level, the new QR rules maintain coverage of the **Change in Behavior** typology while introducing enhanced granularity through transaction-type segmentation. This design change is expected to improve risk specificity and diagnostic value of alerts; however, it also necessitates reassessment of:
-
-* Aggregate versus segmented risk coverage
-* Potential dilution of signal strength at the individual rule level
-* Whether the cumulative coverage of secondary rules remains equivalent to, or exceeds, the prior primary control framework
-
-These considerations are further evaluated in subsequent sections covering conceptual soundness, risk coverage sufficiency, and monitoring implications.
+**RFND_TRF_I / RFND_TRF_O (Incoming / Outgoing Related Transfers of Funds)**
+These transaction types were removed in accordance with Alert Generation Standards, which state that **intra-client transfers within the same legal entity do not represent a change in beneficial ownership** and therefore pose limited AML risk. Their removal is consistent with broader QR rule optimization efforts aimed at reducing false positives without materially impacting risk coverage.
 
 ---
 
-Based on MRMC’s review, the redesigned QR rule framework remains conceptually aligned with its stated monitoring intent and continues to provide coverage of the Change in Behavior typology (AGS 4.1) as defined in the Alert Generation Standards. The transition from four aggregated, account-level QR rules to twenty transaction-type–segmented rules enhances monitoring granularity and improves the ability to identify deviations between expected KYC activity and observed transactional behavior. While the reclassification of the QR rules from primary to secondary reduces their standalone criticality within the overall monitoring framework, MRMC concludes that the cumulative coverage provided by the new QR rules, in conjunction with other primary monitoring controls, is not materially diminished relative to the legacy design. Accordingly, the proposed rule redesign and change in rule importance do not introduce a material gap in regulatory red flag coverage or Global Minimum Standards, provided that ongoing performance monitoring and aggregation-level oversight are maintained to ensure that risk signals are not fragmented or diluted at the individual rule level.
+**SECR_IN / SECR_OUT (Security Transfers In / Out)**
+Security transfers are not monitored by the redesigned QR rules due to an open data issue (MDI-281) affecting transaction value calculations, which materially overstate actual values. MRMC confirmed that these transaction types were **planned but never effectively monitored** under the legacy QR framework. Prior to remediation, security transfer onboarding questions were incorrectly mapped to the **UBSJ** group in the KYC table, resulting in the absence of anticipated security transfer value/volume benchmarks. Following remediation, security transfer and buy/sell questions have been consolidated and correctly mapped to the **SECR** group; however, monitoring remains deferred pending resolution of the underlying data issue.
+
+---
+
+**UBSJ_C / UBSJ_D (Journal Transfer Credit / Debit)**
+Under the legacy QR framework, the **UBSJ** transaction group was monitored but incorrectly compared against anticipated security transfer values due to KYC mapping errors. Following the mapping correction, journal-related onboarding questions are now appropriately mapped to the **UBSJ** group in the KYC table, restoring conceptual consistency between anticipated and observed activity.
+
+---
+
+**CA_D (Cash – All Debits)**
+Legacy QR rules monitored the **CA_D** transaction group but lacked a corresponding anticipated activity benchmark because cash-related onboarding questions were not mapped to the **CA** group in the KYC table. Under the revised mapping, cash-related questions are now correctly associated with **CA**, enabling proper comparison between expected and actual debit cash activity.
+
+---
+
+**CA_C (Cash – All Credits)**
+The **CA_C** transaction group was not monitored under the legacy QR framework, resulting in a monitoring gap for credit-side cash activity. The redesigned QR rules address this gap by explicitly including CA_C within the updated transaction group mapping, thereby improving completeness of coverage.
+
+---
+
+## Summary Assessment
+
+Overall, MRMC concludes that the observed removals and remappings are **primarily attributable to conceptual corrections, data quality constraints, and alignment with updated Alert Generation Standards**, rather than unintended reductions in monitoring scope. Where transaction types are currently unmapped or excluded, compensating rationale is documented, and in certain cases remediation dependencies have been formally identified. The redesigned mapping framework demonstrates improved conceptual integrity and transparency relative to the legacy design.
+
+---
+
+If you would like, I can next:
+
+* Draft a **formal validation conclusion paragraph** for this mapping assessment,
+* Add a **risk and limitation statement** suitable for the Issues & Observations section, or
+* Produce a **table-ready executive summary** highlighting key removals, rationale, and residual risks.
+
+Below is a **formal validation conclusion paragraph** suitable for the *Conclusion* or *Overall Assessment* section of an MRMC validation report and aligned with SR 11-7 style language.
+
+---
+
+## Validation Conclusion
+
+Based on MRMC’s review of the transaction type–to–group code mapping across the legacy and redesigned QR rule frameworks, MRMC concludes that the updated mapping is **largely complete, conceptually sound, and aligned with rule design intent and Alert Generation Standards**. The identified removals and unmapped transaction types primarily reflect **intentional design decisions**, **corrections of legacy mapping inconsistencies**, and **documented data quality limitations**, rather than unintended reductions in monitoring scope. Where transaction types are excluded from direct monitoring, MRMC verified that the rationale is supported by regulatory guidance, risk-based interpretation by Financial Crime Program stakeholders, or formally tracked remediation items. Notably, the redesigned mapping resolves several legacy misalignments between anticipated and observed activity, improves coverage of previously unmonitored transaction groups (e.g., credit-side cash activity), and enhances overall conceptual integrity. Accordingly, MRMC concludes that the revised transaction mapping does **not introduce a material gap in monitoring coverage**, provided that outstanding data issues remain subject to ongoing remediation tracking and that compensating controls continue to operate as designed.
